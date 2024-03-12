@@ -12,16 +12,24 @@ class Pantalla2_0422 extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {}, // si presiona boton
-              child: Text("Pantalla"),
-            )
-          ],
+          child: Container(
+        color: Colors.lightBlue,
+        width: double.infinity,
+        height: 300,
+        child: Card(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+          color: Color(0xff90b4c5),
+          elevation: 10,
+          margin: EdgeInsets.all(32),
+          child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                "SadBoyz Valdez0422",
+                style: TextStyle(fontSize: 30),
+              )),
         ),
-      ),
+      )),
     );
   } // widget
 } // fin pantalla2
