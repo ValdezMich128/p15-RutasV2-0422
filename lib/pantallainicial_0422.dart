@@ -16,16 +16,31 @@ class PantallaInicial_0422 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStatePropertyAll<Color>(Color(0xff8bb075))),
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla1_0422");
               },
               child: Text("Mover a Pantalla1"),
             ),
             ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStatePropertyAll<Color>(Color(0xff6d2eb7))),
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla2_0422");
               },
               child: Text("Mover a Pantalla2"),
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStatePropertyAll<Color>(Color(0xffc534a5))),
+              onPressed: () {
+                Navigator.pushNamed(context, "/Pantalla3_0422");
+              },
+              child: Text("Mover a Pantalla3"),
             )
           ], // fin de niño
         ),

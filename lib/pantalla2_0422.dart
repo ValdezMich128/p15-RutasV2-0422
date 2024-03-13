@@ -8,28 +8,26 @@ class Pantalla2_0422 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pantalla2 Valdez0422"),
-        backgroundColor: Colors.deepPurple,
+        title: Text("Pantalla2 Valdez0422",
+            style: TextStyle(color: Color(0xffb325cf))),
+        backgroundColor: Color(0xffe1b7e5),
       ),
       body: Center(
-          child: Container(
-        color: Colors.lightBlue,
-        width: double.infinity,
-        height: 300,
-        child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-          color: Color(0xff90b4c5),
-          elevation: 10,
-          margin: EdgeInsets.all(32),
-          child: Padding(
-              padding: EdgeInsets.all(16),
-              child: Text(
-                "SadBoyz Valdez0422",
-                style: TextStyle(fontSize: 30),
-              )),
+        child: Container(
+          padding: EdgeInsets.all(32),
+          color: Color(0xffe78fe2),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 200,
+            maxWidth: 400,
+          ),
+          child: Text(
+            'America Valdez 0422',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
-      )),
+      ),
     );
   } // widget
 } // fin pantalla2
